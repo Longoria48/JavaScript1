@@ -27,3 +27,16 @@
 
         container.style.visibility = "hidden"
     }
+    //handle the 'mouse over event' the header
+    header.onmouseover = function(){
+        header.style.color = "red";
+    }
+    header.onmouseout = function(){
+        header.style.color = "black";
+    }
+
+    //Declare a varibale to work on the text input username
+    let username = document.getElementById("username");
+    username.onchange = function(){
+        container.innerText = username.value;
+    }
